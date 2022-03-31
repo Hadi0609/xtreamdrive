@@ -370,10 +370,10 @@ function kirimRoleForm() {
 
 function myDownload() {
     var a = document.getElementById("down-id").innerHTML;
-    document.getElementById("down").innerHTML = '<i class="fa fa-spinner"></i>  Downloading';
+    document.getElementById("down").innerHTML = '<i class="fas fa-spinner fa-pulse"></i>  Downloading....';
     document.getElementById("down").disabled = !0;
     var b = window.setTimeout(function() {
-        document.getElementById("down").innerHTML = '<i class="fa fa-spinner"></i> Still loading..';
+        document.getElementById("down").innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Still loading....';
     }, 6e3);
     $.ajax({
         url: "/ajax.php?ajax=download",
